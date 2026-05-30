@@ -1,8 +1,22 @@
-<section class="hero">
+{{ $hero := resources.Get "images/hero.jpeg" }}
+{{ $hero = $hero.Resize "1600x webp" }}
+<section
+  class="hero"
+  style="background-image: url('{{ $hero.RelPermalink }}');"
+>
   <div class="hero__overlay"></div>
+
   <div class="hero__content">
-    <p class="hero__eyebrow">Finca La Soledad · 1610 m.s.n.m.</p>
-    <h1 class="hero__title">Café con <em>origen</em> y tradición</h1>
-    <a href="#productos" class="hero__cta">Conocer productos</a>
+    <p class="hero__eyebrow">
+      Finca La Soledad · 1610 m.s.n.m.
+    </p>
+
+    <h1 class="hero__title">
+      Café con <em>origen</em> y tradición
+    </h1>
+
+    <a href="#productos" class="hero__cta">
+      Conocer productos
+    </a>
   </div>
 </section>
