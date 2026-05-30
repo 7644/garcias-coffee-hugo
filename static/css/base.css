@@ -1,0 +1,29 @@
+:root {
+  --color-espresso: #1A1410;
+  --color-cafe:     #3B2010;
+  --color-tierra:   #7B4A24;
+  --color-dorado:   #C4952A;
+  --color-crema:    #F5EDD6;
+  --color-blanco:   #FAFAF5;
+
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body:    'Inter', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-blanco);
+  color: var(--color-espresso);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
