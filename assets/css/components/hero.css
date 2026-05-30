@@ -4,11 +4,11 @@
 
 .hero {
   position: relative;
-  height: calc(100svh - var(--header-height));
+  min-height: calc(100svh - var(--header-height));
 
-  background-image: url('/garcias-coffee-hugo/images/hero.jpeg');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 
   display: flex;
   align-items: flex-end;
