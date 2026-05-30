@@ -1,3 +1,3 @@
-baseURL = 'https://jerossas.github.io/gracias-coffee-hugo/'
-locale = 'es-CO'
-title = "Garcia's Coffe"
+baseURL = 'https://jerossas.github.io/garcias-coffee-hugo/'
+languageCode = 'es-CO'
+title = "García's Coffee"
