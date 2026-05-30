@@ -8,6 +8,8 @@
 
   --font-display: 'Cormorant Garamond', serif;
   --font-body:    'Inter', sans-serif;
+
+  --header-height: 72px;
 }
 
 *, *::before, *::after {
