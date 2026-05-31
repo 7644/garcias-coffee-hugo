@@ -1,0 +1,46 @@
+<section id="galeria" class="galeria">
+  <div class="container">
+
+    <div class="galeria__header">
+      <p class="galeria__eyebrow">Galería</p>
+      <h2 class="galeria__title">
+        La finca y <em>el proceso</em>
+      </h2>
+    </div>
+
+    <div class="galeria__grid">
+      {{ range hugo.Data.galeria }}
+
+        {{ if eq .tipo "video" }}
+          <div class="galeria-item galeria-item--video">
+            <video
+              class="galeria-item__media"
+              src="{{ .archivo | relURL }}"
+              alt="{{ .alt }}"
+              autoplay
+              muted
+              loop
+              playsinline
+            ></video>
+          </div>
+
+        {{ else }}
+          {{ $img := resources.Get .archivo }}
+          {{ $img = $img.Resize "800x webp" }}
+          <div class="galeria-item{{ if .destacado }} galeria-item--destacado{{ end }}">
+            <img
+              src="{{ $img.RelPermalink }}"
+              alt="{{ .alt }}"
+              class="galeria-item__media"
+              width="{{ $img.Width }}"
+              height="{{ $img.Height }}"
+              loading="lazy"
+            >
+          </div>
+        {{ end }}
+
+      {{ end }}
+    </div>
+
+  </div>
+</section>
