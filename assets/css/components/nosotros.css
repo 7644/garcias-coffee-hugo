@@ -1,0 +1,140 @@
+/* ==========================================================
+   Nosotros
+   ========================================================== */
+
+.nosotros {
+  background-color: var(--color-blanco);
+  padding-block: 5rem;
+}
+
+.nosotros__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* ==========================================================
+   Image
+   ========================================================== */
+
+.nosotros__image-wrap {
+  width: 100%;
+}
+
+.nosotros__image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+}
+
+/* ==========================================================
+   Body
+   ========================================================== */
+
+.nosotros__eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  color: var(--color-dorado);
+
+  margin-bottom: 0.5rem;
+}
+
+.nosotros__title {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.15;
+
+  color: var(--color-espresso);
+
+  margin-bottom: 1.25rem;
+}
+
+.nosotros__title em {
+  font-style: italic;
+  font-weight: 300;
+}
+
+.nosotros__text {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.8;
+
+  color: var(--color-cafe);
+}
+
+/* ==========================================================
+   Stats
+   ========================================================== */
+
+.nosotros__stats {
+  display: flex;
+  gap: 0;
+
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(26, 20, 16, 0.1);
+}
+
+.nosotros__stat {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nosotros__stat + .nosotros__stat {
+  border-left: 1px solid rgba(26, 20, 16, 0.1);
+}
+
+.nosotros__stat-number {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1;
+
+  color: var(--color-dorado);
+}
+
+.nosotros__stat-label {
+  font-size: 0.6875rem;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+
+  color: var(--color-tierra);
+}
+
+/* ==========================================================
+   Desktop
+   ========================================================== */
+
+@media (min-width: 768px) {
+  .nosotros__inner {
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .nosotros__image-wrap {
+    flex: 1;
+    flex-shrink: 0;
+  }
+
+  .nosotros__image {
+    height: 520px;
+  }
+
+  .nosotros__body {
+    flex: 1;
+  }
+
+  .nosotros__title {
+    font-size: 2.75rem;
+  }
+}
