@@ -1,0 +1,50 @@
+- tipo: imagen
+  archivo: "images/gallery/g1.jpeg"
+  alt: "Familia García con su emprendimiento de café en el parque de Sopetrán."
+  destacado: false
+
+- tipo: imagen
+  archivo: "images/gallery/g2.jpeg"
+  alt: "Empaques de Café García's en sus diferentes presentaciones."
+  destacado: false
+
+- tipo: imagen
+  archivo: "images/gallery/g3.jpeg"
+  alt: "El señor García alistando el café."
+  destacado: false
+
+- tipo: imagen
+  archivo: "images/gallery/g4.jpeg"
+  alt: "Turistas comprando el café de los García."
+  destacado: false
+
+- tipo: imagen
+  archivo: "images/gallery/g5.jpeg"
+  alt: "Joven de la familia cargando un bulto de café en la finca."
+  destacado: false
+
+- tipo: imagen
+  archivo: "images/gallery/g6.jpeg"
+  alt: "Exchibición de los productos de café García's."
+  destacado: false
+
+- tipo: imagen
+  archivo: "images/gallery/g7.jpeg"
+  alt: "El señor García mostrando el emprendimiento de café."
+  destacado: false
+
+- tipo: imagen
+  archivo: "images/gallery/g8.jpeg"
+  alt: "Cliente de EPM sosteniendo un paquete de café García's."
+  destacado: false
+
+- tipo: imagen
+  archivo: "images/gallery/g9.jpeg"
+  alt: "Tazas de café García's con panes típicos de la región."
+  destacado: false
+
+# Lo siguiente es para incluir un video en la galería, pero se ha decidido no incluirlo por ahora.
+#- tipo: video
+#  archivo: "videos/video1.mp4"
+#  alt: "Moliendo el café en la finca de los García."
+#  destacado: true
