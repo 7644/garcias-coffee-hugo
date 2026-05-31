@@ -1,0 +1,40 @@
+<section id="resenas" class="resenas">
+  <div class="container">
+
+    <div class="resenas__header">
+      <p class="resenas__eyebrow">Reseñas</p>
+      <h2 class="resenas__title">
+        Lo que dicen <em>nuestros clientes</em>
+      </h2>
+    </div>
+
+    <ul class="resenas__grid">
+      {{ range hugo.Data.resenas }}
+      <li class="resena-card">
+
+        {{ if .imagen }}
+          {{ $img := resources.Get .imagen }}
+          {{ $img = $img.Resize "600x webp" }}
+          <div class="resena-card__image-wrap">
+            <img
+              src="{{ $img.RelPermalink }}"
+              alt="Reseña de {{ .autor }}"
+              class="resena-card__image"
+              width="{{ $img.Width }}"
+              height="{{ $img.Height }}"
+              loading="lazy"
+            >
+          </div>
+        {{ end }}
+
+        <div class="resena-card__body">
+          <p class="resena-card__texto">"{{ .texto }}"</p>
+          <p class="resena-card__autor">— {{ .autor }}</p>
+        </div>
+
+      </li>
+      {{ end }}
+    </ul>
+
+  </div>
+</section>
