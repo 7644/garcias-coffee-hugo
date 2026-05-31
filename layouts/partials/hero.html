@@ -1,14 +1,14 @@
 {{ $hero := resources.Get "images/hero.jpeg" }}
 {{ $hero = $hero.Resize "1600x webp" }}
-<section
-  class="hero"
-  style="background-image: url('{{ $hero.RelPermalink }}');"
->
+<section class="hero" style="background-image: url('{{ $hero.RelPermalink }}');">
   <div class="hero__overlay"></div>
 
   <div class="hero__content">
     <p class="hero__eyebrow">
-      Finca La Soledad · 1610 m.s.n.m.
+      <a href="https://maps.app.goo.gl/mo8Cg9SYypfjXyZT6" class="hero__eyebrow hero__eyebrow--link" target="_blank"
+        rel="noopener noreferrer">
+        Finca La Soledad · 1610 m.s.n.m.
+      </a>
     </p>
 
     <h1 class="hero__title">

@@ -51,6 +51,19 @@
   margin-bottom: 0.625rem;
 }
 
+.hero__eyebrow--link {
+  display: inline-block;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(196, 149, 42, 0.5);
+
+  transition: text-decoration-color 0.2s ease;
+}
+
+.hero__eyebrow--link:hover {
+  text-decoration-color: var(--color-dorado);
+}
+
 .hero__title {
   font-family: var(--font-display);
   font-size: 2.75rem;
