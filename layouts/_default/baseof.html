@@ -21,6 +21,7 @@
     (resources.Get "css/components/galeria.css")
     (resources.Get "css/components/resenas.css")
     (resources.Get "css/components/contacto.css")
+    (resources.Get "css/components/footer.css")
   }}
 
   {{ $bundle := $styles | resources.Concat "css/main.css" }}
@@ -37,6 +38,8 @@
   <main>
     {{ block "main" . }}{{ end }}
   </main>
+
+  {{ partial "footer.html" . }}
 
   {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
   <script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}">
