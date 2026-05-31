@@ -1,0 +1,46 @@
+{{ $img := resources.Get "images/nosotros.jpeg" }}
+{{ $img = $img.Resize "800x webp" }}
+
+<section id="nosotros" class="nosotros">
+  <div class="container nosotros__inner">
+
+    <div class="nosotros__image-wrap">
+      <img
+        src="{{ $img.RelPermalink }}"
+        alt="Caficultor de la familia García en la Finca La Soledad"
+        class="nosotros__image"
+        width="{{ $img.Width }}"
+        height="{{ $img.Height }}"
+      >
+    </div>
+
+    <div class="nosotros__body">
+      <p class="nosotros__eyebrow">Nuestra historia</p>
+      <h2 class="nosotros__title">
+        Cultivado en las <em>montañas</em> de Antioquia
+      </h2>
+      <p class="nosotros__text">
+        Café García's es cultivado y procesado por la familia García en la
+        Finca La Soledad, corregimiento de Guayabal, municipio de Sopetrán,
+        a 1610 metros sobre el nivel del mar. Cafés especiales de origen,
+        con herencia y tradición.
+      </p>
+
+      <div class="nosotros__stats">
+        <div class="nosotros__stat">
+          <span class="nosotros__stat-number">1610</span>
+          <span class="nosotros__stat-label">m.s.n.m.</span>
+        </div>
+        <div class="nosotros__stat">
+          <span class="nosotros__stat-number">100%</span>
+          <span class="nosotros__stat-label">Café de origen</span>
+        </div>
+        <div class="nosotros__stat">
+          <span class="nosotros__stat-number">Fam.</span>
+          <span class="nosotros__stat-label">García</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
