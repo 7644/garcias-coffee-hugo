@@ -1,0 +1,19 @@
+- nombre: Cuarto
+  peso: "250 g"
+  precio: "14.000"
+  imagen: "images/producto.jpeg"
+
+- nombre: Media
+  peso: "500 g"
+  precio: "28.000"
+  imagen: "images/producto.jpeg"
+
+- nombre: Libra
+  peso: "454 g"
+  precio: "50.000"
+  imagen: "images/producto.jpeg"
+
+- nombre: Kilo
+  peso: "1000 g"
+  precio: "90.000"
+  imagen: "images/producto.jpeg"

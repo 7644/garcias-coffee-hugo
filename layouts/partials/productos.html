@@ -1,0 +1,52 @@
+<section id="productos" class="productos">
+  <div class="container">
+
+    <div class="productos__header">
+      <p class="productos__eyebrow">Productos</p>
+      <h2 class="productos__title">
+        Diferentes <em>presentaciones</em>
+      </h2>
+    </div>
+
+    <ul class="productos__grid">
+      {{ range hugo.Data.productos }}
+      {{ $img := resources.Get .imagen }}
+      {{ $img = $img.Resize "600x webp" }}
+      <li class="producto-card">
+        <div class="producto-card__image-wrap">
+          <img
+            src="{{ $img.RelPermalink }}"
+            alt="Café García's — {{ .nombre }}"
+            class="producto-card__image"
+            width="{{ $img.Width }}"
+            height="{{ $img.Height }}"
+          >
+        </div>
+        <div class="producto-card__body">
+          <h3 class="producto-card__nombre">{{ .nombre }}</h3>
+          <p class="producto-card__peso">{{ .peso }} · molido o en grano</p>
+          <p class="producto-card__precio">
+            ${{ .precio }} <span>COP</span>
+          </p>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+
+    <p class="productos__disclaimer">
+        Los precios pueden variar. Consúltanos por WhatsApp para confirmar disponibilidad.
+    </p>
+
+    <div class="productos__cta">
+      <a
+        href="https://wa.me/573206297736"
+        class="productos__whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Hacer pedido por WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
