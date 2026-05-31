@@ -1,19 +1,19 @@
 - nombre: Cuarto
-  peso: "250 g"
+  peso: "130 gramos"
   precio: "14.000"
   imagen: "images/producto.jpeg"
 
 - nombre: Media
-  peso: "500 g"
+  peso: "250 gramos"
   precio: "28.000"
   imagen: "images/producto.jpeg"
 
 - nombre: Libra
-  peso: "454 g"
+  peso: "500 gramos"
   precio: "50.000"
   imagen: "images/producto.jpeg"
 
 - nombre: Kilo
-  peso: "1000 g"
+  peso: "1000 gramos"
   precio: "90.000"
   imagen: "images/producto.jpeg"
