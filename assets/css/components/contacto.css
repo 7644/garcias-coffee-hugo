@@ -1,0 +1,250 @@
+/* ==========================================================
+   Contacto
+   ========================================================== */
+
+.contacto {
+  background-color: var(--color-blanco);
+  padding-block: 5rem;
+}
+
+.contacto__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+/* ==========================================================
+   Eyebrow y título
+   ========================================================== */
+
+.contacto__eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+
+  color: var(--color-dorado);
+
+  margin-bottom: 0.5rem;
+}
+
+.contacto__title {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.15;
+
+  color: var(--color-espresso);
+
+  margin-bottom: 1.75rem;
+}
+
+.contacto__title em {
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* ==========================================================
+   WhatsApp CTA
+   ========================================================== */
+
+.contacto__whatsapp {
+  display: block;
+  text-align: center;
+
+  background-color: #25D366;
+  color: #fff;
+
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+
+  padding: 0.875rem 1.5rem;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+
+  transition: opacity 0.2s ease;
+}
+
+.contacto__whatsapp:hover {
+  opacity: 0.88;
+}
+
+/* ==========================================================
+   Form
+   ========================================================== */
+
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.contacto__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.contacto__label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: var(--color-tierra);
+}
+
+.contacto__input {
+  width: 100%;
+
+  background-color: #fff;
+  border: 1px solid rgba(26, 20, 16, 0.15);
+  border-radius: 3px;
+
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 300;
+
+  color: var(--color-espresso);
+
+  padding: 0.75rem 1rem;
+
+  transition: border-color 0.2s ease;
+}
+
+.contacto__input:focus {
+  outline: none;
+  border-color: var(--color-dorado);
+}
+
+.contacto__input--textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contacto__submit {
+  align-self: flex-start;
+
+  background-color: var(--color-espresso);
+  color: var(--color-crema);
+
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+
+  padding: 0.875rem 2rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+.contacto__submit:hover {
+  opacity: 0.85;
+}
+
+/* ==========================================================
+   Info
+   ========================================================== */
+
+.contacto__info-item {
+  margin-bottom: 1.75rem;
+}
+
+.contacto__info-label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--color-tierra);
+
+  margin-bottom: 0.375rem;
+}
+
+.contacto__info-text {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.7;
+
+  color: var(--color-cafe);
+}
+
+.contacto__info-text a {
+  color: var(--color-cafe);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(59, 32, 16, 0.3);
+
+  transition: text-decoration-color 0.2s ease;
+}
+
+.contacto__info-text a:hover {
+  text-decoration-color: var(--color-cafe);
+}
+
+/* ==========================================================
+   Social
+   ========================================================== */
+
+.contacto__social-list {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  margin-top: 0.375rem;
+}
+
+.contacto__social-link {
+  display: inline-block;
+
+  border: 1px solid rgba(26, 20, 16, 0.2);
+  border-radius: 2px;
+
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--color-espresso);
+
+  padding: 0.375rem 0.875rem;
+
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.contacto__social-link:hover {
+  background-color: var(--color-espresso);
+  border-color: var(--color-espresso);
+  color: var(--color-crema);
+}
+
+/* ==========================================================
+   Desktop
+   ========================================================== */
+
+@media (min-width: 768px) {
+  .contacto__inner {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 6rem;
+  }
+
+  .contacto__form-col {
+    flex: 1.2;
+  }
+
+  .contacto__info-col {
+    flex: 1;
+    padding-top: 4.5rem;
+  }
+
+  .contacto__title {
+    font-size: 2.75rem;
+  }
+}
