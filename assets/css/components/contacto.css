@@ -1,21 +1,23 @@
 /* ==========================================================
-   Contacto
-   ========================================================== */
+Contacto
+========================================================== */
 
 .contacto {
   background-color: var(--color-blanco);
   padding-block: 5rem;
 }
 
-.contacto__inner {
-  display: flex;
-  flex-direction: column;
-  gap: 3.5rem;
+/* ==========================================================
+Hero
+========================================================== */
+
+.contacto__hero {
+  margin-bottom: 0rem;
 }
 
 /* ==========================================================
-   Eyebrow y título
-   ========================================================== */
+Eyebrow y título
+========================================================== */
 
 .contacto__eyebrow {
   font-size: 0.6875rem;
@@ -45,12 +47,13 @@
 }
 
 /* ==========================================================
-   WhatsApp CTA
-   ========================================================== */
+WhatsApp CTA
+========================================================== */
 
 .contacto__whatsapp {
-  display: block;
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
   background-color: #25D366;
   color: #fff;
@@ -58,6 +61,7 @@
   font-size: 0.875rem;
   font-weight: 500;
   letter-spacing: 0.04em;
+  text-decoration: none;
 
   padding: 0.875rem 1.5rem;
   border-radius: 3px;
@@ -71,8 +75,48 @@
 }
 
 /* ==========================================================
-   Form
-   ========================================================== */
+Layout
+========================================================== */
+
+.contacto__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(26, 20, 16, 0.1);
+}
+
+/* ==========================================================
+Header formulario
+========================================================== */
+
+.contacto__form-header {
+  margin-bottom: 1.75rem;
+}
+
+.contacto__form-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+
+  color: var(--color-espresso);
+
+  margin-bottom: 0.5rem;
+}
+
+.contacto__form-description {
+  font-size: 0.9375rem;
+  font-weight: 300;
+  line-height: 1.7;
+
+  color: var(--color-cafe);
+}
+
+/* ==========================================================
+Formulario
+========================================================== */
 
 .contacto__form {
   display: flex;
@@ -147,8 +191,8 @@
 }
 
 /* ==========================================================
-   Info
-   ========================================================== */
+Información
+========================================================== */
 
 .contacto__info-item {
   margin-bottom: 1.75rem;
@@ -175,6 +219,7 @@
 
 .contacto__info-text a {
   color: var(--color-cafe);
+
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-color: rgba(59, 32, 16, 0.3);
@@ -187,8 +232,8 @@
 }
 
 /* ==========================================================
-   Social
-   ========================================================== */
+Redes sociales
+========================================================== */
 
 .contacto__social-list {
   list-style: none;
@@ -215,7 +260,10 @@
 
   padding: 0.375rem 0.875rem;
 
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .contacto__social-link:hover {
@@ -225,11 +273,12 @@
 }
 
 /* ==========================================================
-   Desktop
-   ========================================================== */
+Desktop
+========================================================== */
 
 @media (min-width: 768px) {
-  .contacto__inner {
+
+  .contacto__content {
     flex-direction: row;
     align-items: flex-start;
     gap: 6rem;
@@ -241,10 +290,10 @@
 
   .contacto__info-col {
     flex: 1;
-    padding-top: 4.5rem;
   }
 
   .contacto__title {
     font-size: 2.75rem;
   }
+
 }
