@@ -13,15 +13,15 @@
     rel="stylesheet">
 
   {{ $styles := slice
-    (resources.Get "css/base.css")
-    (resources.Get "css/components/header.css")
-    (resources.Get "css/components/hero.css")
-    (resources.Get "css/components/nosotros.css")
-    (resources.Get "css/components/productos.css")
-    (resources.Get "css/components/galeria.css")
-    (resources.Get "css/components/resenas.css")
-    (resources.Get "css/components/contacto.css")
-    (resources.Get "css/components/footer.css")
+  (resources.Get "css/base.css")
+  (resources.Get "css/components/header.css")
+  (resources.Get "css/components/hero.css")
+  (resources.Get "css/components/nosotros.css")
+  (resources.Get "css/components/productos.css")
+  (resources.Get "css/components/galeria.css")
+  (resources.Get "css/components/resenas.css")
+  (resources.Get "css/components/contacto.css")
+  (resources.Get "css/components/footer.css")
   }}
 
   {{ $bundle := $styles | resources.Concat "css/main.css" }}
@@ -41,9 +41,9 @@
 
   {{ partial "footer.html" . }}
 
-  {{ $js := resources.Get "js/main.js" | minify | fingerprint }}
-  <script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}">
-  </script>
+  hugo{{ $js := resources.Get "js/main.js" | js.Build | fingerprint }}
+  <script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
 
 </body>
 
