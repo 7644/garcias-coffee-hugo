@@ -41,7 +41,7 @@
 
   {{ partial "footer.html" . }}
 
-  hugo{{ $js := resources.Get "js/main.js" | js.Build | fingerprint }}
+  {{ $js := resources.Get "js/main.js" | js.Build | fingerprint }}
   <script type="module" src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
 
