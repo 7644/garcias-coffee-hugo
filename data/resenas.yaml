@@ -1,11 +1,11 @@
 - autor: "Yudis del grupo EPM Santa Fé, Antioquia."
   texto: "Disfrutando el increíble sabor de este café, cultivado en Sopetrán y que tiene la esencia y el sabor de café García's."
-  imagen: ""
+  imagen: "images/resenas/r1.jpeg"
 
-- autor: "Cliente."
-  texto: "Reseña."
-  imagen: ""
+# - autor: "Cliente."
+#   texto: "Reseña."
+#   imagen: ""
 
-- autor: "Cliente."
-  texto: "Reseña."
-  imagen: ""
+# - autor: "Cliente."
+#   texto: "Reseña."
+#   imagen: ""
