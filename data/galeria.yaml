@@ -44,7 +44,7 @@
   destacado: false
 
 # Lo siguiente es para incluir un video en la galería, pero se ha decidido no incluirlo por ahora.
-#- tipo: video
-#  archivo: "videos/video1.mp4"
-#  alt: "Moliendo el café en la finca de los García."
-#  destacado: true
+- tipo: video
+  archivo: "videos/Tostadora_Cafe.mp4"
+  alt: "Nueva compra de la tostadora de café de la familia García."
+  destacado: true

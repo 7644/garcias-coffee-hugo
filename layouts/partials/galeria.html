@@ -16,10 +16,9 @@
             <video
               class="galeria-item__media"
               src="{{ .archivo | relURL }}"
-              alt="{{ .alt }}"
-              autoplay
-              muted
-              loop
+              aria-label="{{ .alt }}"
+              controls
+              preload="metadata"
               playsinline
             ></video>
           </div>
